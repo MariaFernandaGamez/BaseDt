@@ -1,40 +1,40 @@
 CASOS DE USO
 
     1: Registrar un Nuevo País
-INSERT INTO Paises (pais_id, nombre) VALUES (1, 'Nombre_del_País');
+INSERT INTO Paises (pais_id, nombre) VALUES (1, 'Nombre_País');
 
     2: Registrar una Nueva Ciudad
-INSERT INTO Ciudades (ciudad_id, nombre, pais_id) VALUES (1, 'Nombre_de_la_Ciudad', 1);
+INSERT INTO Ciudades (ciudad_id, nombre, pais_id) VALUES (1, 'Nombre_Ciudad', 1);
 
     3: Registrar una Nueva Sucursal
-INSERT INTO Sucursales (sucursal_id, nombre, direccion, ciudad_id) VALUES (1, 'Nombre_de_la_Sucursal', 'Dirección_de_la_Sucursal', 1);
+INSERT INTO Sucursales (sucursal_id, nombre, direccion, ciudad_id) VALUES (1, 'Nombre_Sucursal', 'Direc_Sucursal', 1);
 
     4: Registrar un Nuevo Cliente
-INSERT INTO Clientes (cliente_id, nombre, email, direccion) VALUES (1, 'Nombre_del_Cliente', 'email@cliente.com', 'Dirección_del_Cliente');
+INSERT INTO Clientes (cliente_id, nombre, email, direccion) VALUES (1, 'Nombre_Cliente', 'email@cliente.com', 'Direc_Cliente');
 
     5: Registrar un Nuevo Teléfono para un Cliente
-INSERT INTO Telefonos_Clientes (telefono_id, numero, cliente_id) VALUES (1, 'Número_de_Teléfono', 1);
+INSERT INTO Telefonos_Clientes (telefono_id, numero, cliente_id) VALUES (1, 'Numero_Telefono', 1);
 
     6: Registrar un Nuevo Paquete
-INSERT INTO Paquetes (paquete_id, numero_seguimiento, peso, dimensiones, contenido, valor_declarado, tipo_servicio, estado) VALUES (1, 'Número_de_Seguimiento', 10.5, '30x30x30', 'Contenido_del_Paquete', 100.0, 'Tipo_de_Servicio', 'Estado');
+INSERT INTO Paquetes (paquete_id, numero_seguimiento, peso, dimensiones, contenido, valor_declarado, tipo_servicio, estado) VALUES (1, 'Numero_Seguimiento', 10.5, '30x30x30', 'Contenido_Paquete', 100.0, 'Tipo_Servicio', 'Estado');
 
     7: Registrar un Nuevo Envío
-INSERT INTO Envios (envio_id, cliente_id, paquete_id, fecha_envio, destino, ruta_id, sucursal_id) VALUES (1, 1, 1, '2024-01-01 10:00:00', 'Destino_del_Envío', 1, 1);
+INSERT INTO Envios (envio_id, cliente_id, paquete_id, fecha_envio, destino, ruta_id, sucursal_id) VALUES (1, 1, 1, '2024-01-01 10:00:00', 'Destino_Envío', 1, 1);
 
     8: Registrar un Nuevo Vehículo
-INSERT INTO Vehiculos (vehiculo_id, placa, marca, modelo, capacidad_carga, sucursal_id) VALUES (1, 'Placa_del_Vehículo', 'Marca_del_Vehículo', 'Modelo_del_Vehículo', 5000.0, 1);
+INSERT INTO Vehiculos (vehiculo_id, placa, marca, modelo, capacidad_carga, sucursal_id) VALUES (1, 'Placa_Vehiculo', 'Marca_Vehiculo', 'Modelo_Vehiculo', 5000.0, 1);
 
     9: Registrar un Nuevo Conductor
-INSERT INTO Conductores (conductor_id, nombre) VALUES (1, 'Nombre_del_Conductor');
+INSERT INTO Conductores (conductor_id, nombre) VALUES (1, 'Nombre_Conductor');
 
     10: Registrar un Nuevo Teléfono para un Conductor
-INSERT INTO Telefonos_Conductores (telefono_id, numero, conductor_id) VALUES (1, 'Número_de_Teléfono', 1);
+INSERT INTO Telefonos_Conductores (telefono_id, numero, conductor_id) VALUES (1, 'Numero_Telefono', 1);
 
     11: Asignar un Conductor a una Ruta y un Vehículo
 INSERT INTO Conductores_Vehiculos (conductor_id, vehiculo_id) VALUES (1, 1);
 
     12: Registrar un Nuevo Auxiliar
-INSERT INTO Auxiliares (auxiliar_id, nombre) VALUES (1, 'Nombre_del_Auxiliar');
+INSERT INTO Auxiliares (auxiliar_id, nombre) VALUES (1, 'Nombre_Auxiliar');
 
     13: Asignar un Auxiliar a una Ruta
 INSERT INTO Ruta_Auxiliares (ruta_id, auxiliar_id) VALUES (1, 1);
